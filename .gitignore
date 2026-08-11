@@ -1,1 +1,4 @@
 /.env
+/.idea
+/php/log
+/nginx/log
