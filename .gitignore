@@ -1,4 +1,25 @@
-/.env
-/.idea
-/php/log
-/nginx/log
+# Composer
+/app/vendor/
+composer.phar
+
+# PHPUnit
+/app/.phpunit.result.cache
+/app/.phpunit.cache/
+
+# Логи
+/nginx/log/*
+!/nginx/log/.gitkeep
+/php/log/*
+!/php/log/.gitkeep
+
+# Окружение
+.env
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

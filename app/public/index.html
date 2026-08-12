@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>text comparison</title>
+    <title>Text comparison</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    Тут будет страничка для сравнения текстов
+<main class="page">
+    <h1>Сравнение текста</h1>
+
+    <div class="editor">
+        <div class="editor__col">
+            <label for="old-text">Первая версия</label>
+            <textarea id="old-text" placeholder="Вставьте исходный текст..."></textarea>
+        </div>
+        <div class="editor__col">
+            <label for="new-text">Вторая версия</label>
+            <textarea id="new-text" placeholder="Вставьте новую версию текста..."></textarea>
+        </div>
+    </div>
+
+    <button type="button" id="compare-btn">Compare</button>
+    <span id="status"></span>
+
+    <div id="result"></div>
+</main>
+
+<script src="assets/js/app.js"></script>
 </body>
 </html>

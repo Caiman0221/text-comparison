@@ -9,6 +9,8 @@ RUN apt-get update && apt-get install -y \
 RUN docker-php-ext-install -j$(nproc) \
     mbstring
 
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
 # Настройка рабочей директории
 WORKDIR /var/www/app
 
