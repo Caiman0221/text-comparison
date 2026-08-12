@@ -338,9 +338,7 @@ class TextComparator
 		// Пересечение — слова, которые есть в обоих предложениях
 		$intersection = count(array_intersect($setA, $setB));
 		// Объединение — все уникальные слова из обоих предложений вместе
-		$union = array_merge($setA, $setB)
-				|> array_unique(...)
-				|> count(...);
+		$union = count(array_unique(array_merge($setA, $setB)));
 
 		return $union > 0 ? $intersection / $union : 0.0;
 	}
